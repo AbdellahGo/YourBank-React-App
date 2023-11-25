@@ -1,0 +1,20 @@
+.our-testimonials * {
+  /* outline: 1px solid red; */
+}
+
+.our-testimonials .horizontal-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+@media screen and (max-width: 975px) {
+  .horizontal-scroll {
+    overflow-x: scroll;
+    position: relative;
+  }
+  .bar {
+    width: fit-content;
+  }
+  .content {
+    width: 318px;
+  }
+}
