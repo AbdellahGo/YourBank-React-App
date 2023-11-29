@@ -1,4 +1,4 @@
-import { 
+import {
   box, money, briefcase, hands, bank, Loan, building, invest, coin, book, arrowTop, facebook, twitter,
   linkedin, email, phone, location, quotes, discussion, people, secureAccount, wallet, lamp, server,
   greyBriefcase, mission, vision, company, shakehand, presentation, signature,
@@ -408,25 +408,81 @@ export const testimonialsData = {
     },
   ],
   individualsContent: [
-    {
-      id: 1,
-      icon: quotes,
-      name: 'Sara T',
-      content: 'YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.',
-    },
-    {
-      id: 2,
-      icon: quotes,
-      name: 'John D',
-      content: 'I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.',
-    },
-    {
-      id: 3,
-      icon: quotes,
-      name: 'Emily G',
-      content: "I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.",
-    },
-  ]
+      {
+        id: 1,
+        icon: quotes,
+        name: 'Sara T',
+        content: 'YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.',
+      },
+      {
+        id: 2,
+        icon: quotes,
+        name: 'John D',
+        content: 'I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.',
+      },
+      {
+        id: 3,
+        icon: quotes,
+        name: 'Emily G',
+        content: "I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.",
+      },
+      {
+        id: 4,
+        icon: quotes,
+        name: "Michael R",
+        content: "YourBank is more than just a bank, they're a true partner in my financial journey. Their commitment to customer satisfaction and their dedication to providing innovative solutions have made a significant impact on my life."
+      },
+      {
+        id: 5,
+        icon: quotes,
+        name: "Jessica L",
+        content: "I've always been hesitant to trust banks, but YourBank has completely changed my perspective. Their transparency, ethical practices, and genuine care for their customers have earned my unwavering loyalty."
+      },
+      {
+        id: 6,
+        icon: quotes,
+        name: "David C",
+        content: "YourBank's financial education resources have been a game-changer for me. They've helped me understand my finances better, make informed decisions, and achieve my financial goals. I'm so grateful for their commitment to empowering their customers."
+      }
+    ],
+    businessesContent: [
+      {
+        id: 1,
+        icon: quotes,
+        name: "Acme Corporation",
+        content: "YourBank has been instrumental in supporting our business growth. Their tailored financing solutions and expert guidance have helped us achieve our financial goals and expand our operations."
+      },
+      {
+        id: 2,
+        icon: quotes,
+        name: "Beta Enterprises",
+        content: "We are incredibly grateful for YourBank's commitment to financial security. Their robust fraud protection measures and proactive approach to risk management have given us peace of mind and allowed us to focus on growing our business."
+      },
+      {
+        id: 3,
+        icon: quotes,
+        name: "Gamma Industries",
+        content: "YourBank's dedication to building strong relationships with their clients has been invaluable to our business. Their personalized service and understanding of our industry needs have made them a trusted partner in our success."
+      },
+      {
+        id: 4,
+        icon: quotes,
+        name: "Delta Solutions",
+        content: "YourBank's innovative digital banking solutions have transformed our financial management processes. Their user-friendly platforms and seamless integration with our accounting systems have streamlined our operations and saved us valuable time."
+      },
+      {
+        id: 5,
+        icon: quotes,
+        name: "Epsilon Technologies",
+        content: "YourBank's expertise in international trade finance has been essential for our global expansion. Their tailored solutions and understanding of complex regulations have enabled us to navigate the complexities of cross-border transactions with confidence."
+      },
+      {
+        id: 6,
+        icon: quotes,
+        name: "Zeta Consulting",
+        content: "YourBank's commitment to innovation has been a driving force behind our success. Their willingness to explore new technologies and develop cutting-edge financial solutions has given us a competitive edge in the market."
+      }
+    ]
 }
 export const overviewData = {
   careersPage: {

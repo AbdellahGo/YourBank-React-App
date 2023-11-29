@@ -1,20 +1,147 @@
-.our-testimonials * {
-  /* outline: 1px solid red; */
+.our-testimonials .react-horizontal-scrolling-menu--wrapper {
+  width: 100%;
+  overflow: hidden !important;
+  position: relative;
 }
 
-.our-testimonials .horizontal-scroll::-webkit-scrollbar {
-  height: 10px;
-}
 
 @media screen and (max-width: 975px) {
-  .horizontal-scroll {
-    overflow-x: scroll;
-    position: relative;
+  .our-testimonials .react-horizontal-scrolling-menu--wrapper {
+    height: 350px;
   }
-  .bar {
-    width: fit-content;
+}
+
+.our-testimonials  .react-horizontal-scrolling-menu--scroll-container {
+  width: 86%;
+  display: flex;
+  overflow: hidden !important;
+  margin: auto;
+  gap: 25px;
+}
+
+
+@media screen and (max-width: 975px) {
+  .our-testimonials  .react-horizontal-scrolling-menu--scroll-container {
+    width: 100%;
   }
-  .content {
-    width: 318px;
+}
+@media screen and (max-width: 767px) {
+  .our-testimonials  .react-horizontal-scrolling-menu--scroll-container {
+    gap: 0px;
   }
+}
+.our-testimonials  .react-horizontal-scrolling-menu--scroll-container::before {
+  content: '';
+  position: absolute;
+  z-index: 1000;
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(25, 25, 25, 0.00) 0%, #191919 105.84%);
+  left: 0;
+  top: 0;
+  margin-left: 107px;
+}
+.our-testimonials  .react-horizontal-scrolling-menu--scroll-container::after {
+  content: '';
+  position: absolute;
+  z-index: 1000;
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(270deg, #191919 10.8%, rgba(25, 25, 25, 0.00) 105.84%);
+  right: 0;
+  top: 0;
+  margin-right: 107px;
+}
+
+@media screen and (min-width: 976px) {
+  .our-testimonials  .react-horizontal-scrolling-menu--scroll-container::after {
+    margin-right: 65px;
+  }
+  .our-testimonials  .react-horizontal-scrolling-menu--scroll-container::before {
+    margin-left: 65px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .our-testimonials  .react-horizontal-scrolling-menu--scroll-container::after {
+    margin-right: 89px;
+  }
+  .our-testimonials  .react-horizontal-scrolling-menu--scroll-container::before {
+    margin-left: 89px;
+  }
+}
+
+
+@media screen and (max-width: 975px) {
+  .our-testimonials  .react-horizontal-scrolling-menu--scroll-container::after {
+    margin-right: 0;
+      width: 20%;
+  }
+  .our-testimonials  .react-horizontal-scrolling-menu--scroll-container::before {
+    margin-left: 0;
+      width: 20%;
+  }
+}
+
+.right-arrow {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.left-arrow {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+@media screen and (max-width: 975px) { 
+  .left-arrow {
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    margin-left: -40px;
+}
+  .right-arrow {
+    top: 85%;
+    right: 50%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    margin-right: -40px;
+    
+}
+}
+
+.our-testimonials .image-container::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #262626;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }

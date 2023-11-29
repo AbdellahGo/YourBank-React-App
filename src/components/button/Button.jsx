@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Button = ({ bgColor, rounded, text, padding, fontSize, color, margin, button, activeButton, setActiveButton, id }) => {
-  const c = 'dfd'.includes
   return (
     <>
       {!button ? (
