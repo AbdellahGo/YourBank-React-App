@@ -16,10 +16,11 @@ import MissionAndVision from './missionAndVision/MissionAndVision'
 import PressReleases from './pressReleases/PressReleases'
 import ProtectYou from './protectYou/ProtectYou'
 import CreateAccount from './createAccount/CreateAccount'
+import UserProfile from './userProfile/UserProfile.jsx'
 
 
 export {
     NavBar, Footer, Hero, Button, OurProduct, UseCases, Features, FAQ, CTA, OurTestimonials,
     Overview, OurValues, Benefits, JobOpenings, MissionAndVision, PressReleases, ProtectYou,
-    CreateAccount
+    CreateAccount, UserProfile
 }

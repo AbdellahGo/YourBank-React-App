@@ -1,6 +1,4 @@
 import LogoDesktop from "./LogoDesktop.png";
-import LogoLaptop from "./LogoLaptop.png";
-import LogoMobile from "./LogoMobile.png";
 import GroupArrows from "./GroupArrows.png";
 import pointsRight from "./pointsRight.png";
 import pointsLeft from "./pointsLeft.png";
@@ -52,12 +50,15 @@ import google from "./google.png";
 import facebook2 from "./facebook2.png";
 import appel from "./appel.png";
 import SignUpLogingBg from "./SignUpLogingBg.png";
+import account from "./account.png";
+import power from "./power.png";
 
 export {
-  LogoDesktop, LogoLaptop, LogoMobile, GroupArrows, pointsRight, pointsLeft,
+  LogoDesktop, GroupArrows, pointsRight, pointsLeft,
   pointsleft2, menu, moneyExchange, check, money, briefcase, hands, box, bank, Loan,
   building, invest, coin, book, arrowTop, arrowDown, email, facebook, linkedin,
   location, phone, twitter, arrowLift, arrowRight, quotes, discussion, people, secureAccount,
   wallet, lamp, server, greyBriefcase, mission, vision, pointsGroup, company, shakehand, presentation, signature,
-  boxes, stars, currency, papers, eye, google, facebook2, appel, SignUpLogingBg
+  boxes, stars, currency, papers, eye, google, facebook2, appel, SignUpLogingBg,
+  account, power
 };

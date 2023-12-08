@@ -12,8 +12,8 @@ const ProtectYou = () => {
                     xxl:leading-[27px] xl:leading-[24px] leading-[21px]'>{description}</p>
             </div>
             <div className='xxl:mt-[200px] xl:mt-[120px] md:mt-[80px] mt-[40px] xxl:px-[100px] xl:px-[80px] md:px-[30px] relative'>
-                <div className='md:block w-full h-full absolute left-0 xxl:top-[-82px] xl:top-[-62px] md:top-[-30px]  hidden green-black-gradient  rounded-t-[50px] rounded-b-[20px]'></div>
-                <div className='grid md:grid-cols-2 grid-cols-1 xxl:gap-[30px] gap-[20px]'>
+                <div className='z-[-1] md:block w-full h-full absolute left-0 xxl:top-[-82px] xl:top-[-62px] md:top-[-30px]  hidden  green-black-gradient rounded-t-[50px] rounded-b-[20px]'></div>
+                <div className='z-50 grid md:grid-cols-2 grid-cols-1 xxl:gap-[30px] gap-[20px]'>
                     {protectYouContent.map(({ id, icon, title, desc }) => (
                         <div key={id} className='xxl:p-[50px] md:p-[40px] p-[24px] rounded-[20px] border-1 border-grey-15 green-black-gradient'>
                             <div className='flex items-center'>

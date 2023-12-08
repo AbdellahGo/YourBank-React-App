@@ -6,10 +6,6 @@
 * {
   box-sizing: border-box;
 }
-.mission-and-vision,
-.mission-and-vision * {
-  /* border: 1px solid red; */
-}
 
 body {
   background-color: #191919;
@@ -20,6 +16,9 @@ body {
 }
 .navbar .links .active {
   background-color: #262626;
+}
+.navbar .links-account .active {
+  background-color: #191919;
 }
 
 .navbar .account .active {
