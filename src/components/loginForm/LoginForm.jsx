@@ -1,16 +1,17 @@
 import React, { useRef } from 'react'
 import { eye } from '../../assets'
 import LoginSignUp from '../loginSignUp/LoginSignUp'
-import { Navigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 const LoginForm = ({ setEmptyInput, setIsAccountExist }) => {
   const userData = JSON.parse(localStorage.getItem('userData'))
   const email = useRef(null)
   const passwordInput = useRef(null)
+  const navigate = useNavigate()
   const isUserExists = (e) => {
     e.preventDefault()
     if (email.current.value && passwordInput.current.value) {
       if (email.current.value === userData?.email && passwordInput.current.value === userData?.password) {
-        Navigate('/');
+        navigate('/');
         localStorage.setItem('userData', JSON.stringify({ ...userData, isLogin: true }));
         window.location.reload()
         setIsAccountExist(true)
