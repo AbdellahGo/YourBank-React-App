@@ -13,6 +13,7 @@ const SignUpForm = ({ setEmptyInput }) => {
   const dataStorage = (e) => {
     e.preventDefault()
     if (firstName.current.value && lastName.current.value && email.current.value && passwordInput.current.value) {
+      navigate('/');
       const userData = {
         isLogin: true,
         firstName: firstName.current.value,
@@ -22,7 +23,6 @@ const SignUpForm = ({ setEmptyInput }) => {
       };
       localStorage.setItem('userData', JSON.stringify(userData));
       window.location.reload()
-      navigate('/profile');
       setEmptyInput(true)
     } else {
       setEmptyInput(false)

@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { LogoDesktop, menu, account, power } from '../../assets'
 import { links } from '../../demoData/data'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const NavBar = () => {
   const userData = JSON.parse(localStorage.getItem('userData'))
   const [toggleMenu, setToggleMenu] = useState(false)
+  const navigate = useNavigate()
   const logout = () => {
+    navigate('/')
     localStorage.setItem('userData', JSON.stringify({ ...userData, isLogin: false }))
     window.location.reload()
   }

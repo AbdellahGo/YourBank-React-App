@@ -10,9 +10,9 @@ const LoginForm = ({ setEmptyInput, setIsAccountExist }) => {
     e.preventDefault()
     if (email.current.value && passwordInput.current.value) {
       if (email.current.value === userData?.email && passwordInput.current.value === userData?.password) {
-        localStorage.setItem('userData', JSON.stringify({...userData, isLogin: true}));
+        Navigate('/');
+        localStorage.setItem('userData', JSON.stringify({ ...userData, isLogin: true }));
         window.location.reload()
-        Navigate('/profile');
         setIsAccountExist(true)
       } else {
         setIsAccountExist(false)
